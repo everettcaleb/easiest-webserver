@@ -1,6 +1,6 @@
-var express = require('express');
-var app = express();
-var path = require('path');
+const express = require('express'),
+  path = require('path'),
+  app = express()
 
 app.use(express.static(path.resolve('my-website')));
 app.get('/', function(req, res) {
